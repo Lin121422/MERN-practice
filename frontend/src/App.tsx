@@ -8,7 +8,7 @@ const App = () => {
   const [todos, setTodos] = useState<ITodo[]>([])
 
   useEffect(() => {
-    fetchTodos()
+    fetchTodos()  // 每次更新就會呼叫
   }, [])
 
   const fetchTodos = (): void => {
